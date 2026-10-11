@@ -6,7 +6,7 @@ import {
   SystemHealth,
 } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 class ApiService {
   private async request<T>(endpoint: string, options?: RequestInit): Promise<T> {
@@ -38,7 +38,7 @@ class ApiService {
     } catch (err: any) {
       if (err.name === 'TypeError' && err.message.includes('Failed to fetch')) {
         throw new Error(
-          'Cannot reach the TrailBuddy backend. Please ensure the FastAPI server is running on http://localhost:8000.'
+          'Cannot reach the TrailBuddy backend. Please check your connection or ensure the server is running.'
         );
       }
       throw err;

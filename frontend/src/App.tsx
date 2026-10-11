@@ -117,7 +117,7 @@ export function App() {
         {backendError && (
           <div className="mb-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-center justify-between">
             <span>
-              ⚠️ {backendError}. Please ensure the FastAPI server is running on port 8000.
+              ⚠️ {backendError}. Please ensure the TrailBuddy server is running.
             </span>
             <button
               onClick={loadAppData}
