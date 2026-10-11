@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+backend/.venv/
+*.db
+backend/trailbuddy.db
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.oxlintrc.json
+.DS_Store
+
+# Environment files
+backend/.env
+frontend/.env
+*.local
+
+# Logs
+*.log
